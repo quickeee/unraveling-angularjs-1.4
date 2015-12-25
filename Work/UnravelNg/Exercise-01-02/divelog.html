@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dive Log (jQuery)</title>
+    <link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div class="container-fluid">
+    <h1>My Latest Dives (jQuery)</h1>
+    <div class="row" id="logbook"></div>
+</div>
+<script src="/bower_components/jquery/dist/jquery.js"></script>
+<script src="dives.js"></script>
+<script>
+    $(document).ready(function(){
+        $.each(dives, function(index, dive){
+            $('#logbook').append(
+                    $('<div>', {'class': 'col-sm-4'})
+                            .append($('<h3>').html(dive.site))
+                            .append($('<h4>').html(dive.location))
+                            .append($('<h2>').html(dive.depth + ' feet | ' + dive.time + ' min'))
+            );
+        });
+    });
+</script>
+</body>
+</html>

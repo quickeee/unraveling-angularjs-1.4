@@ -1,0 +1,23 @@
+{
+  "name": "UnravelNg",
+  "homepage": "https://github.com/tlan16/unraveling-angularjs-1.4",
+  "authors": [
+    "Frank <tlan16@sina.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "bootstrap": "~3.3.6",
+    "jquery": "jQuery#~2.1.4"
+  }
+}
